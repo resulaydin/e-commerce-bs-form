@@ -20,3 +20,83 @@
 .btn-light i {
   color: #9da1a7;
 }
+
+// slider
+
+.slider {
+  &__nav {
+    max-height: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider {
+    &__nav {
+      max-height: 294px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .slider {
+    &__nav {
+      max-height: 350px;
+    }
+  }
+}
+
+// card
+.card {
+  .img-wrap {
+    height: 240px;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    position: relative;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      transform: scale(0.9);
+      transition: all ease 0.5s;
+
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+
+  .info-wrap {
+    padding: 1rem 0.3rem 1rem 1.2rem;
+
+    & > a {
+      font-size: 0.8rem;
+      border: none;
+    }
+  }
+
+  .badge {
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    z-index: 10;
+  }
+
+  .title {
+    display: block;
+    text-decoration: none;
+    color: #51585e;
+  }
+
+  .price-wrap {
+    .price-new {
+      color: gold;
+      font-weight: 600;
+    }
+    .price-old {
+      color: black;
+      opacity: 0.6;
+    }
+  }
+}
