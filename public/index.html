@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="css/custom.css" />
   </head>
-  <body class="bg-light">
+  <body class="h-100 bg-light d-flex flex-column justify-content-between">
     <header>
       <section class="top-bar">
         <div class="container">
@@ -218,7 +218,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-4 col-sm-6">
             <figure class="card shadow">
-              <a href="#" class="img-wrap">
+              <a href="product-detail.html" class="img-wrap">
                 <b class="badge bg-success">indirim</b>
                 <img src="img/1.jpeg" alt="" />
               </a>
@@ -364,6 +364,40 @@
         </div>
       </div>
     </section>
+
+    <footer class="py-4 bg-primary">
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-4 col-md-6">
+            <form>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Email" />
+                <button class="btn btn-outline-warning">Abone Ol</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-8 col-md-6 text-center text-md-end">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-icon btn-outline-warning">
+                <i class="fa fa-brands fa-facebook"></i>
+              </button>
+              <button type="button" class="btn btn-icon btn-outline-warning">
+                <i class="fa fa-brands fa-instagram"></i>
+              </button>
+              <button type="button" class="btn btn-icon btn-outline-warning">
+                <i class="fa fa-brands fa-youtube"></i>
+              </button>
+              <button type="button" class="btn btn-icon btn-outline-warning">
+                <i class="fa fa-brands fa-twitter"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <p class="text-center text-white">@2025 Tüm Hakları Saklıdır.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
